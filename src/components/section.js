@@ -4,11 +4,11 @@ function Section(props) {
                 <div>
                     <h2>{props.title}</h2>
                     <p>{props.subtitle}</p>
-                    <ul class="games-list">
-                        {/* items da lista */}
+                    <ul className={props.className}>
+                        {props.children}{/* recebendo o componente com o seus valores do arquivo "lista.js" */}
                     </ul>
                 </div>
-            </section>
+        </section>
     )
 }
 
